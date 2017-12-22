@@ -32,7 +32,21 @@ int Input_Graph(Graph &m,p &P,d &D){
         cin>>x>>y>>z;
         D[x][y] = z;
     }
+    return 0;
 }
+
+int Floyd_warshall(Graph &m,p &P,d &D){
+    p ptemp;
+    d dtemp;
+    int i,j,k;
+    for(i = 0;i<m.vexnum;i++){
+        for(j =0;j<m.vexnum;j++){
+            dtemp[i][j] = D[i][j];
+        }
+    }
+
+}
+
 
 
 
