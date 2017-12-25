@@ -32,13 +32,13 @@ int Input_Graph(Graph &m,p &P,d &D){
         cin>>x>>y>>z;
         m.edge[x][y] = z;
     }
-    for(int i = 0; i < m.vexnum; i++)
-    {
-        for(int j = i; j < m.vexnum; j++)
-        {
-            m.edge[j][i] = m.edge[i][j];
-        }
-    }
+    //for(int i = 0; i < m.vexnum; i++)
+    //{
+    //    for(int j = i; j < m.vexnum; j++)
+    //    {
+    //        m.edge[j][i] = m.edge[i][j];
+    //    }
+    //}
     return 0;
 }
 
@@ -87,5 +87,6 @@ int main() {
             cout << "- " << j << endl;
         }
     }
+	system("pause");
     return 0;
 }
